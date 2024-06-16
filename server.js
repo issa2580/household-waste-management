@@ -6,7 +6,7 @@ require("dotenv").config();
 
 /* Routes */
 const camion = require("./routes/camionRoutes");
-const secteur = require("./routes/secteurs");
+const secteur = require("./routes/secteurRoutes");
 const horaire = require("./routes/horaires");
 const itineraire = require("./routes/itineraires");
 app.use(express.json());
