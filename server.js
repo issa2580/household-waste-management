@@ -5,12 +5,12 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 /* Routes */
-const vehicle = require("./routes/vehicules");
+const camion = require("./routes/camionRoutes");
 const secteur = require("./routes/secteurs");
 const horaire = require("./routes/horaires");
 const itineraire = require("./routes/itineraires");
 app.use(express.json());
-app.use("/api", vehicle);
+app.use("/api", camion);
 app.use("/api", secteur);
 app.use("/api", horaire);
 app.use("/api", itineraire);
