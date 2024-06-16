@@ -8,7 +8,7 @@ require("dotenv").config();
 const camion = require("./routes/camionRoutes");
 const secteur = require("./routes/secteurRoutes");
 const horaire = require("./routes/hoursPerAreaRoutes");
-const itineraire = require("./routes/itineraires");
+const itineraire = require("./routes/roadRoutes");
 const pointCollects = require("./routes/pointCollectsRoutes");
 app.use(express.json());
 app.use("/api", camion);
