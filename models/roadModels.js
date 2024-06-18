@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Camion = require("./camionModels");
 const Secteur = require("./secteurModels");
-const PointCollect = require("./pointCollectsModels");
+const SiteVisit = require("./hoursPerAreaModels");
 
 const roadSchema = new mongoose.Schema({
   camion: {
@@ -14,9 +14,9 @@ const roadSchema = new mongoose.Schema({
     ref: Secteur,
     required: true,
   },
-  pointCollect: {
+  siteVisit: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: PointCollect,
+    ref: SiteVisit,
     required: true,
   },
 });
