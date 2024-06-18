@@ -10,12 +10,14 @@ const secteur = require("./routes/secteurRoutes");
 const horaire = require("./routes/hoursPerAreaRoutes");
 const itineraire = require("./routes/roadRoutes");
 const pointCollects = require("./routes/pointCollectsRoutes");
+const emplacement = require("./routes/emplacementRoutes");
 app.use(express.json());
 app.use("/api", camion);
 app.use("/api", secteur);
 app.use("/api", horaire);
 app.use("/api", itineraire);
 app.use("/api", pointCollects);
+app.use("/api", emplacement);
 
 /* Database structures */
 const URL = process.env.MONGODB_URL;
