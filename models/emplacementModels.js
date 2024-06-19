@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 const siteVisitSchema = new mongoose.Schema({
   siteName: { type: String, required: true },
   timeSpent: { type: String, required: true },
+  managerName: { type: String, required: true },
+  managerPhone: { type: String, required: true },
   latitude: { type: Number, required: true },
   longitude: { type: Number, required: true },
 });
